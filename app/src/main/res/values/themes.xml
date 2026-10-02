@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base da janela. As cores reais da interface vêm do tema Compose (Material 3). -->
+    <style name="Theme.CleanGuard" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+
+    <!-- Splash Screen oficial (androidx.core:core-splashscreen), compatível com Android 8+. -->
+    <style name="Theme.CleanGuard.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.CleanGuard</item>
+    </style>
+</resources>
